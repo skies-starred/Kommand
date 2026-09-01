@@ -13,7 +13,7 @@ dependencies {
     implementation("foo.starred:kommand:<version>")
 }
 ```
-Latest kommand version: ``1.0.1``
+Latest kommand version: ``1.0.2``
 
 ## Code examples
 
