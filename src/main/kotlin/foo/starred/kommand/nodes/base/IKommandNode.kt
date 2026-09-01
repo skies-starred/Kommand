@@ -13,7 +13,7 @@ abstract class IKommandNode<S>(val name: String) {
 
     fun suggests(block: () -> Collection<String>): IKommandNode<S> {
         suggests = SuggestionProvider { _, builder ->
-            for (a in block()) builder.suggest(a)
+            block().filter { it.contains(builder.remaining, true) }.forEach { builder.suggest(it) }
             builder.buildFuture()
         }
 
