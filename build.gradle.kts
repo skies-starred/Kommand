@@ -5,7 +5,7 @@ plugins {
 
 val projectName = "kommand"
 val projectGroup = "foo.starred"
-val projectVersion = "1.0.2"
+val projectVersion = "2026.09.1"
 
 group = projectGroup
 version = projectVersion
